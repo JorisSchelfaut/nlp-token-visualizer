@@ -13,7 +13,10 @@ processed_text = process_text(text, encode, decode, markup='html', colors=tokenv
 generates...
 <br>
 
+```html
 <span style="background-color: Khaki;">H</span><span style="background-color: AliceBlue;">e</span><span style="background-color: Aquamarine;">l</span><span style="background-color: Coral;">l</span><span style="background-color: Lavender;">o</span><span style="background-color: Ivory;"> </span><span style="background-color: DarkSalmon;">w</span><span style="background-color: Khaki;">o</span><span style="background-color: AliceBlue;">r</span><span style="background-color: Aquamarine;">l</span><span style="background-color: Coral;">d</span><span style="background-color: Lavender;">!</span>
+```
+
 
 ## LaTeX example
 
