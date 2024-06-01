@@ -35,7 +35,7 @@ def process_text(text, encode, decode, markup='html', colors=None):
         if markup == 'html':
             colors = HTML_COLORS
         elif markup == 'latex':
-            color = LATEX_COLORS
+            colors = LATEX_COLORS
         else:
             raise Exception("Unknown markup.")
     
