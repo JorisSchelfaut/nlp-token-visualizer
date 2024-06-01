@@ -1,5 +1,32 @@
-# nlp-token-visualizer
-Token visualization for NLP tasks.
+# NLP Token Visualizer
+
+Token visualization for NLP tasks. 
+
+To use the method `process_text`, include the following:
+
+```python
+import tokenviz
+from tokenviz.visualization import process_text
+```
+
+Load your text and define your `encode` and `decode` methods. These methods are given as arguments to `process_text`:
+
+```python
+text = "some text ..."
+
+# takes text and converts it to a list of integers according to the encoding scheme
+def encode(text_to_encode):
+    # some magic happens
+    return encoded_text
+
+# takes a list of integers and decodes these into the text according to the decoding scheme
+def decode(text_to_decode):
+    # some magic happens
+    return decoded_text
+
+process_text(text, encode, decode)
+```
+
 
 ## HTML example
 
