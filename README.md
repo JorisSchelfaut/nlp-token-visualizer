@@ -1,6 +1,9 @@
 # NLP Token Visualizer
 
-Token visualization for NLP tasks. 
+Token visualization for NLP tasks. Inspired by [Tiktokenizer](https://tiktokenizer.vercel.app/). The idea was to use your own vocabularies to visualize encoded text.
+
+
+## Import and required arguments
 
 To use the method `process_text`, include the following:
 
@@ -27,8 +30,9 @@ def decode(text_to_decode):
 process_text(text, encode, decode)
 ```
 
+## Examples
 
-## HTML example
+### HTML example
 
 Here's a simple example using the predefined encoding/decoding methods with a simple string. Assuming `encode` simply maps each character to a number, the following...
 
@@ -45,7 +49,7 @@ generates...
 ```
 
 
-## LaTeX example
+### LaTeX example
 
 Add the following imports and definitions to your LaTeX document.
 
