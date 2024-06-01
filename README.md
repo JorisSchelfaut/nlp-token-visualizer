@@ -38,7 +38,7 @@ Here's a simple example using the predefined encoding/decoding methods with a si
 
 ```python
 text = 'Hello world!'
-processed_text = process_text(text, encode, decode, markup='html', colors=tokenviz.visualization.HTML_COLORS)
+processed_text = process_text(text, encode, decode, markup='html')
 ```
 
 generates...
@@ -76,7 +76,7 @@ Assuming `encode` simply maps each character to a number, the following...
 
 ```python
 text = 'Hello world!'
-processed_text = process_text(text, encode, decode, markup='latex', colors=tokenviz.visualization.LATEX_COLORS)
+processed_text = process_text(text, encode, decode, markup='latex')
 ```
 
 generates...
