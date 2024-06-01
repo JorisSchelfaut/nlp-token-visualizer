@@ -16,7 +16,7 @@ HTML_COLORS  = ["Khaki", "AliceBlue", "Aquamarine", "Coral", "Lavender", "Ivory"
 LATEX_COLORS = ["yellow", "pink", "lightgray", "lime", "cyan", "magenta" ]
 
 
-def process_text(text, encode, decode, markup='html', colors=HTML_COLORS):
+def process_text(text, encode, decode, markup='html', colors=None):
     """
     Colour codes each token in a text according to the encoding vocabulary
     
@@ -30,6 +30,14 @@ def process_text(text, encode, decode, markup='html', colors=HTML_COLORS):
     Returns:
         string:                         colour-encoded text
     """
+    
+    if colors is None:
+        if markup == 'html':
+            colors = HTML_COLORS
+        if markup == 'latex':
+            color = LATEX_COLORS
+        else:
+            raise Exception("Unknown markup.")
     
     # encode the incoming text with the given encoding method
     encodings = encode(text)
